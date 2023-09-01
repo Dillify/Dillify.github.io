@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Dillify Analytics</title>
+        <title>Dillify AI & Analytics</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,14 +76,14 @@
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                                <a class="nav-link click-scroll" href="contact.html">Contact</a>
                             </li>
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="topics-listing.html">Topics Listing</a></li>
+                                    <li><a class="dropdown-item" href="topics-listing.html">Case Studies</a></li>
 
                                     <li><a class="dropdown-item" href="contact.html">Contact Form</a></li>
                                 </ul>
@@ -103,11 +103,11 @@
                     <div class="row">
 
                         <div class="col-lg-8 col-12 mx-auto">
-                            <h1 class="text-white text-center">Discover. Learn. Enjoy</h1>
+                            <h1 class="text-white text-center">Build Fast. Succeed Fast</h1>
 
                             <h6 class="text-center">platform for AI experts around the world</h6>
 
-                            <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                            <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search" id="search-form">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-text bi-search" id="basic-addon1">
                                         
@@ -859,6 +859,42 @@
         <script src="js/jquery.sticky.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
+        <script>document.addEventListener('DOMContentLoaded', function() {
+          const searchForm = document.getElementById('search-form');
+          const searchInput = document.getElementById('keyword');
+        
+          searchForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            
+            if (searchTerm !== '') {
+              // Check if there is a matching case study link
+              const matchingLink = findMatchingLink(searchTerm);
+        
+              if (matchingLink) {
+                // Redirect to the matching case study page
+                window.location.href = matchingLink.href;
+              } else {
+                // Redirect to the case studies page
+                window.location.href = '/topic-listing.html';
+              }
+            }
+          });
+        
+          function findMatchingLink(searchTerm) {
+            const caseStudyLinks = document.querySelectorAll('.case-study-link'); // Add a class "case-study-link" to each case study link
+        
+            for (const link of caseStudyLinks) {
+              const linkText = link.textContent.toLowerCase();
+              if (linkText.includes(searchTerm)) {
+                return link;
+              }
+            }
+        
+            return null; // No matching link found
+          }
+        });
+    </script>
 
     </body>
 </html>
