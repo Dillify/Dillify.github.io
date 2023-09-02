@@ -859,36 +859,7 @@
         <script src="js/jquery.sticky.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const searchInput = document.getElementById('keyword');
-                const searchButton = document.getElementById('search-button');
-        
-                // Add an event listener to the search button
-                searchButton.addEventListener('click', function() {
-                    const searchTerm = searchInput.value.toLowerCase();
-        
-                    // Call a function to search for matching case studies
-                    searchCaseStudies(searchTerm);
-                });
-        
-                function searchCaseStudies(keyword) {
-                    const caseStudies = document.querySelectorAll('.custom-block-topics-listing');
-        
-                    caseStudies.forEach(function(caseStudy) {
-                        const description = caseStudy.querySelector('p.mb-0').textContent.toLowerCase();
-                        
-                        // Check if the description contains the keyword
-                        if (description.includes(keyword)) {
-                            // If a match is found, you can take any action you want here.
-                            // For example, you can display the case study, open a link, or show a message.
-                            alert('Matching case study found:\n' + description);
-                        }
-                    });
-                }
-            });
-</script>
-
+        <script src="js/search.js"></script>
 
     </body>
 </html>
