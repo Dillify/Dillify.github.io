@@ -151,9 +151,9 @@
                 				<br>TradeFlow Analysis
                 				<br>Lease Bidding
 				       			    </p>
-
+			<div class="col-lg-12 col-12">
 			<button class="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Market Fit AI Suite Demo">Request a Demo</button>
-
+			</div>
 			<br>
 
 
@@ -181,8 +181,9 @@
                         <br>Fraud/Anomaly Detection
                 				<br>Cross-sell / Upsell 
                         </p>
+			<div class="col-lg-12 col-12">
 			<button class="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Customer 360 AI Suite Demo">Request a Demo</button>
-
+			</div>
                   
                         </div>
 
@@ -223,7 +224,7 @@
                     <div class="col-lg-3 col-12 mb-4 pb-2">
                         <a class="navbar-brand mb-2" href="index.html">
                             <i class="bi-back"></i>
-                            <span>Topic</span>
+                            <span>Dillify</span>
                         </a>
                     </div>
 
@@ -301,7 +302,9 @@
   function handleDemoButtonClick(button) {
     button.addEventListener('click', function() {
       // Get the meeting description from the button's data attribute
-      const description = button.getAttribute('data-description');
+      const title = button.getAttribute('data-description');
+	const description = 'Meeting with Dillify Analytics. Please make sure to add info@dillify.in as a guest to this meeting.';
+
 
       // Calculate the date for the meeting (next day at 8 PM)
       const today = new Date();
@@ -312,7 +315,7 @@
       const formattedDate = today.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
 
       // Create the Google Calendar event creation URL
-      const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${description}&dates=${formattedDate}/${formattedDate}&details=${description}&location=Virtual&sf=true&output=xml&attendees=info@dillify.in`;
+      const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${formattedDate}/${formattedDate}&details=${description}&location=Virtual&sf=true&output=xml&attendees=info@dillify.in`;
 
       // Redirect users to Google Calendar to create the event
       window.location.href = googleCalendarLink;
