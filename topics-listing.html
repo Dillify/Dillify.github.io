@@ -379,7 +379,7 @@
 	            const content = element.textContent.toLowerCase();
 	            const startIndex = content.indexOf(keyword);
 	
-	            if (startIndex !== -1) {
+	            if (startIndex !== -1 && !keywordFound) {
 	                // Keyword found in this element, scroll to it
 	                const rect = element.getBoundingClientRect();
 	                window.scrollTo(0, rect.top + window.scrollY);
