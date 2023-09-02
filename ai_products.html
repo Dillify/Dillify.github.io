@@ -296,15 +296,16 @@
 	<script>
   document.getElementById('requestDemoButton').addEventListener('click', function() {
     // Get the meeting details from the button's data attributes
-    const email = this.getAttribute('data-email');
+    const email = encodeURIComponent(this.getAttribute('data-email'));
     const title = this.getAttribute('data-description');
 
     // Calculate the date for the meeting (1 day later)
     const today = new Date();
-    const oneDayLater = new Date(today.getTime() + 24 * 60 * 60 * 1000); // Add 1 day in milliseconds
+    today.setDate(today.getDate() + 1); // Add 1 day to today's date
+    today.setHours(20, 0, 0, 0); // Set the time to 8 PM (20:00:00)
 
     // Format the date for the Google Calendar URL (YYYYMMDDTHHMMSSZ)
-    const formattedDate = oneDayLater.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+    const formattedDate = today.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
 
     // Create the Google Calendar event creation URL
     const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${formattedDate}/${formattedDate}&details=${title}&location=Virtual&sf=true&output=xml&attendees=${email}`;
