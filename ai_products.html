@@ -152,7 +152,9 @@
                 				<br>Lease Bidding
 				       			    </p>
 
-			<button class="requestDemoButton">Request a Demo</button>
+			<button id="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Market Fit AI Suite Demo">Request a Demo</button>
+
+			<br>
 
 
                           <blockquote>
@@ -179,7 +181,8 @@
                         <br>Fraud/Anomaly Detection
                 				<br>Cross-sell / Upsell 
                         </p>
-			<button class="requestDemoButton">Request a Demo</button>
+			<button id="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Customer 360 AI Suite Demo">Request a Demo</button>
+
                   
                         </div>
 
@@ -291,28 +294,23 @@
         <script src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
 	<script>
-  // Get all elements with the "requestDemoButton" class
-  const demoButtons = document.querySelectorAll('.requestDemoButton');
+  document.getElementById('requestDemoButton').addEventListener('click', function() {
+    // Get the meeting details from the button's data attributes
+    const email = this.getAttribute('data-email');
+    const title = this.getAttribute('data-description');
 
-  // Attach a click event listener to each button
-  demoButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Define the meeting details for each button separately here if needed
-      const meetingDetails = {
-	title: 'Demo Request',
-      description: 'Request a demo of our product.',
-      location: 'Virtual Meeting',
-      startTime: new Date(), // Set the start time for the meeting
-      endTime: new Date(Date.now() + 24 * 60 * 60 * 1000) // Set the end time (25 hour later in this example)
-    
-      };
+    // Calculate the date for the meeting (1 day later)
+    const today = new Date();
+    const oneDayLater = new Date(today.getTime() + 24 * 60 * 60 * 1000); // Add 1 day in milliseconds
 
-      // Create a Google Calendar link for each button separately if needed
-      const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${meetingDetails.title}&details=${meetingDetails.description}&location=${meetingDetails.location}&dates=${meetingDetails.startTime.toISOString()}/${meetingDetails.endTime.toISOString()}`;
+    // Format the date for the Google Calendar URL (YYYYMMDDTHHMMSSZ)
+    const formattedDate = oneDayLater.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
 
-      // Redirect users to Google Calendar to create the event
-      window.location.href = googleCalendarLink;
-    });
+    // Create the Google Calendar event creation URL
+    const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${formattedDate}/${formattedDate}&details=${title}&location=Virtual&sf=true&output=xml&attendees=${email}`;
+
+    // Redirect users to Google Calendar to create the event
+    window.location.href = googleCalendarLink;
   });
 </script>
 
