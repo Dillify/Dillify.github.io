@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const keyword = searchInput.value.toLowerCase();
 
         // Navigate to the case studies page
-        window.location.href = 'Dillify/topics-listing.html#' + keyword;
+        window.location.href = 'topics-listing.html#' + keyword;
     });
 });
