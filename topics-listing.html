@@ -364,36 +364,38 @@
         <script src="js/custom.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
-    const url = window.location.href;
-    const keyword = url.split('#')[1]; // Get the keyword from the URL
-    
-    if (keyword) {
-        // Get all elements with class "mb-0"
-        const elementsWithClass = document.querySelectorAll('p.mb-0');
+	    const url = window.location.href;
+	    const keyword = url.split('#')[1]; // Get the keyword from the URL
+	    
+	    if (keyword) {
+	        // Get all elements with class "0-mb"
+	        const elementsWithClass = document.querySelectorAll('p.mb-0');
+	
+	        // Initialize a flag to check if the keyword is found
+	        let keywordFound = false;
+	
+	        // Loop through the elements with class "0-mb"
+	        elementsWithClass.forEach(function (element) {
+	            const content = element.textContent.toLowerCase();
+	            const startIndex = content.indexOf(keyword);
+	
+	            if (startIndex !== -1) {
+	                // Keyword found in this element, scroll to it
+	                const rect = element.getBoundingClientRect();
+	                window.scrollTo(0, rect.top + window.scrollY);
+	                keywordFound = true;
+	                // Exit the loop since we found the keyword
+	                return;
+	            }
+	        });
+	
+	        if (!keywordFound) {
+	            // Keyword not found in any element, display an alert
+	            alert('Keyword not found on this page.');
+	        }
+	    }
+	});
 
-        // Initialize a flag to check if the keyword is found
-        let keywordFound = false;
-
-        // Loop through the elements with class "mb-0"
-        elementsWithClass.forEach(function (element) {
-            const content = element.textContent.toLowerCase();
-            const startIndex = content.indexOf(keyword);
-
-            if (startIndex !== -1) {
-                // Keyword found in this element, scroll to it
-                window.scrollTo(0, startIndex);
-                keywordFound = true;
-                // Exit the loop since we found the keyword
-                return;
-            }
-        });
-
-        if (!keywordFound) {
-            // Keyword not found in any element, display an alert
-            alert('Keyword not found on this page.');
-        }
-    }
-});
 
 	</script>
 		
