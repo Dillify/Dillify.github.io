@@ -152,7 +152,7 @@
                 				<br>Lease Bidding
 				       			    </p>
 
-			<button id="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Market Fit AI Suite Demo">Request a Demo</button>
+			<button class="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Market Fit AI Suite Demo">Request a Demo</button>
 
 			<br>
 
@@ -181,7 +181,7 @@
                         <br>Fraud/Anomaly Detection
                 				<br>Cross-sell / Upsell 
                         </p>
-			<button id="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Customer 360 AI Suite Demo">Request a Demo</button>
+			<button class="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Customer 360 AI Suite Demo">Request a Demo</button>
 
                   
                         </div>
@@ -294,9 +294,13 @@
         <script src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
 	<script>
-  document.getElementById('requestDemoButton').addEventListener('click', function() {
+  const demoButtons = document.querySelectorAll('.requestDemoButton');
+
+  // Attach a click event listener to each button
+  demoButtons.forEach(button => {
+    button.addEventListener('click', function() {
     // Get the meeting details from the button's data attributes
-    const email = encodeURIComponent(this.getAttribute('data-email'));
+    const email = 'info@dillify.in';
     const title = this.getAttribute('data-description');
 
     // Calculate the date for the meeting (1 day later)
