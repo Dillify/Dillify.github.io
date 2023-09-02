@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const searchForm = document.getElementById('search-form');
-    const searchInput = document.getElementById('search-input');
+    const searchInput = document.getElementById('keyword');
     
     searchForm.addEventListener('submit', function (e) {
         e.preventDefault();
