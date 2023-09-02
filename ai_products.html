@@ -152,6 +152,9 @@
                 				<br>Lease Bidding
 				       			    </p>
 
+			<button class="requestDemoButton">Request a Demo</button>
+
+
                           <blockquote>
                                 Customer 360 AI Suite
                             </blockquote>
@@ -176,6 +179,7 @@
                         <br>Fraud/Anomaly Detection
                 				<br>Cross-sell / Upsell 
                         </p>
+			<button class="requestDemoButton">Request a Demo</button>
                   
                         </div>
 
@@ -286,6 +290,32 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
+	<script>
+  // Get all elements with the "requestDemoButton" class
+  const demoButtons = document.querySelectorAll('.requestDemoButton');
+
+  // Attach a click event listener to each button
+  demoButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Define the meeting details for each button separately here if needed
+      const meetingDetails = {
+	title: 'Demo Request',
+      description: 'Request a demo of our product.',
+      location: 'Virtual Meeting',
+      startTime: new Date(), // Set the start time for the meeting
+      endTime: new Date(Date.now() + 24 * 60 * 60 * 1000) // Set the end time (25 hour later in this example)
+    
+      };
+
+      // Create a Google Calendar link for each button separately if needed
+      const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${meetingDetails.title}&details=${meetingDetails.description}&location=${meetingDetails.location}&dates=${meetingDetails.startTime.toISOString()}/${meetingDetails.endTime.toISOString()}`;
+
+      // Redirect users to Google Calendar to create the event
+      window.location.href = googleCalendarLink;
+    });
+  });
+</script>
+
 
     </body>
 </html>
