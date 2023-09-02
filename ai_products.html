@@ -294,29 +294,33 @@
         <script src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
 	<script>
+  // Get all elements with the "requestDemoButton" class
   const demoButtons = document.querySelectorAll('.requestDemoButton');
 
-  // Attach a click event listener to each button
-  demoButtons.forEach(button => {
+  // Function to handle button clicks
+  function handleDemoButtonClick(button) {
     button.addEventListener('click', function() {
-    // Get the meeting details from the button's data attributes
-    const email = 'info@dillify.in';
-    const title = this.getAttribute('data-description');
+      // Get the meeting description from the button's data attribute
+      const description = button.getAttribute('data-description');
 
-    // Calculate the date for the meeting (1 day later)
-    const today = new Date();
-    today.setDate(today.getDate() + 1); // Add 1 day to today's date
-    today.setHours(20, 0, 0, 0); // Set the time to 8 PM (20:00:00)
+      // Calculate the date for the meeting (next day at 8 PM)
+      const today = new Date();
+      today.setDate(today.getDate() + 1); // Add 1 day to today's date
+      today.setHours(20, 0, 0, 0); // Set the time to 8 PM (20:00:00)
 
-    // Format the date for the Google Calendar URL (YYYYMMDDTHHMMSSZ)
-    const formattedDate = today.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+      // Format the date for the Google Calendar URL (YYYYMMDDTHHMMSSZ)
+      const formattedDate = today.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
 
-    // Create the Google Calendar event creation URL
-    const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${formattedDate}/${formattedDate}&details=${title}&location=Virtual&sf=true&output=xml&attendees=${email}`;
+      // Create the Google Calendar event creation URL
+      const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${description}&dates=${formattedDate}/${formattedDate}&details=${description}&location=Virtual&sf=true&output=xml&attendees=info@dillify.in`;
 
-    // Redirect users to Google Calendar to create the event
-    window.location.href = googleCalendarLink;
-  });
+      // Redirect users to Google Calendar to create the event
+      window.location.href = googleCalendarLink;
+    });
+  }
+
+  // Attach the click event listener to each button
+  demoButtons.forEach(handleDemoButtonClick);
 </script>
 
 
