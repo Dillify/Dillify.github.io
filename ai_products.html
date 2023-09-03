@@ -150,11 +150,8 @@
                 				<br>Investment Analysis
                 				<br>TradeFlow Analysis
                 				<br>Lease Bidding
-				       			    </p>
-			<div class="col-lg-12 col-12">
-			<button class="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Market Fit AI Suite Demo">Request a Demo</button>
-			</div>
-							
+				</p>
+										
 			<br>
 
 
@@ -182,9 +179,6 @@
                         <br>Fraud/Anomaly Detection
                 				<br>Cross-sell / Upsell 
                         </p>
-			<div class="col-lg-12 col-12">
-			<button class="requestDemoButton" data-email="info@dillify.in" data-description="Dillify: Customer 360 AI Suite Demo">Request a Demo</button>
-			</div>
 			                  
                         </div>
 
@@ -295,42 +289,12 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
-	<script>
-  // Get all elements with the "requestDemoButton" class
-  const demoButtons = document.querySelectorAll('.requestDemoButton');
+	<!-- Calendly badge widget begin -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+	<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/dillify/30min', text: 'Schedule time with Dillify', color: '#0069ff', textColor: '#ffffff', branding: undefined }); }</script>
+	<!-- Calendly badge widget end -->
 
-  // Function to handle button clicks
-  function handleDemoButtonClick(button) {
-    button.addEventListener('click', function() {
-      // Get the meeting description from the button's data attribute
-      const title = button.getAttribute('data-description');
-	const description = 'Meeting with Dillify Analytics. Please make sure to add info@dillify.in as a guest to this meeting.';
-
-
-      // Calculate the date for the meeting (next day at 8 PM)
-      const today = new Date();
-      today.setDate(today.getDate() + 1); // Add 1 day to today's date
-      today.setHours(20, 0, 0, 0); // Set the time to 8 PM (20:00:00)
-
-      // Format the date for the Google Calendar URL (YYYYMMDDTHHMMSSZ)
-      const formattedDate = today.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
-
-      // Create the Google Calendar event creation URL
-      const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${formattedDate}/${formattedDate}&details=${description}&location=Virtual&sf=true&output=xml&attendees=info@dillify.in`;
-
-      // Redirect users to Google Calendar to create the event
-      window.location.href = googleCalendarLink;
-    });
-  }
-
-  // Attach the click event listener to each button
-  demoButtons.forEach(handleDemoButtonClick);
-</script>
-
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/dillify/30min', text: 'Schedule time with Dillify', color: '#0069ff', textColor: '#ffffff', branding: undefined }); }</script>
-<!-- Calendly badge widget end -->
+    
     </body>
 </html>
