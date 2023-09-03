@@ -862,15 +862,33 @@
     s1.src='https://embed.tawk.to/64f0267cb2d3e13950ed146e/1h951cmj5';
     s1.charset='UTF-8';
     s1.setAttribute('crossorigin','*');
-    s1.id = "twakto-container";
-    <style> #twakto-container {
-    position: fixed; /* This makes it fixed in place */
-    bottom: 30px; /* Adjust the distance from the bottom */
-    right: 20px; /* Adjust the distance from the right */
-    }</style>
     s0.parentNode.insertBefore(s1,s0);
-    })();
+    })()
     </script>
+    <!-- widget position -->
+    <script type="text/javascript">
+	var Tawk_API = Tawk_API || {};
+
+	Tawk_API.customStyle = {
+		visibility : {
+			desktop : {
+				position : 'br',
+				xOffset : '20px',
+				yOffset : '60px'
+			},
+			mobile : {
+				position : 'br',
+				xOffset : 0,
+				yOffset : 0
+			},
+			bubble : {
+				rotate : '0deg',
+			 	xOffset : -20,
+			 	yOffset : 0
+			}
+		}
+	};
+</script>
     <!--End of Tawk.to Script-->
 
     </body>
