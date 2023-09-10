@@ -487,6 +487,9 @@ strong {
 -----------------------------------------*/
 .hero-section {
   background-image: url('businesswoman-using-tablet-analysis.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   position: relative;
   overflow: hidden;
