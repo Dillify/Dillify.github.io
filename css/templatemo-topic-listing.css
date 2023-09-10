@@ -486,7 +486,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('/images/businesswoman-using-tablet-analysis.jpg');
+/*   background-image: url('/images/businesswoman-using-tablet-analysis.jpg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
