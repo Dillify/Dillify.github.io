@@ -205,10 +205,10 @@ strong {
 }
 
 .partner-icon {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border: 2px solid #e1e1e1;
-    margin: 5px; /* Adjust the margin to control spacing */
+    margin: 10px; /* Adjust the margin to control spacing */
 }
 
 
