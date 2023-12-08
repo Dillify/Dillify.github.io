@@ -6,137 +6,136 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://www.dillify.in/</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/index.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/contact.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/topics-listing.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/analytics-services.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/ai_products.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/fraud-prediction.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/claim-severity.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/wallet-churn.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/lead-scoring.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/lead-movement.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/marketing-performance.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/auto-pv.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/auto-xray.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/recommender-engine.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/generative-ai.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/customer-segment.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/demand-supply.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/gravity-models.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/techpartner.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/promoter.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/case-studies-2.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/case-studies-3.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/case-studies-4.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/case-studies-5.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dillify.in/topics-detail.html</loc>
-  <lastmod>2023-10-16T01:14:08+00:00</lastmod>
+  <lastmod>2023-10-22T04:59:14+00:00</lastmod>
   <priority>0.51</priority>
 </url>
-
+      
 
 </urlset>
